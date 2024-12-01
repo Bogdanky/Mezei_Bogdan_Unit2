@@ -27,7 +27,7 @@ monitorizareTitle.addEventListener('click', function () {
         showSlide(currentIndex); // Afișăm prima imagine
         console.log('Slideshow pornit');
     } else {
-        console.log('Slideshow este deja activ.');
+        console.log('Slideshow este deja activ!');
     }
 });
 
