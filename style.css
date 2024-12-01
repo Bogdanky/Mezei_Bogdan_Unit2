@@ -1,0 +1,153 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* fundal metalic */
+    color: #e0e0e0; /* text alb-gri */
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, #ff7518, #ff8f4a);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    background: #1f1f1f;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #ff7518;
+    margin-bottom: 10px;
+}
+
+/* Imagini */
+img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, opacity 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#social-button {
+    background: linear-gradient(90deg, #ff7518, #ff8f4a);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+#social-button:hover {
+    background: linear-gradient(90deg, #ff8f4a, #ff7518);
+    transform: scale(1.05);
+}
+
+#back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff7518;
+    font-weight: bold;
+    border: 2px solid #ff7518;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#back-button:hover {
+    background: #ff7518;
+    color: #fff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table th {
+    color: #f3e9ff;
+}
+
+table td {
+    color: #ddd;
+}
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Ascunde imaginile */
+    transition: opacity 1s ease; /* Tranziție lină */
+}
+
+.slide.active {
+    opacity: 1; /* Afișează doar imaginea activă */
+}
